@@ -46,6 +46,8 @@ public class ClientWithSsl {
 
         client.shutdown();
 
+        System.exit(0);
+
     }
     private static ClientConfig getPrimaryClientConfig() throws Exception {
         ClassLoader classLoader = ClientWithSsl.class.getClassLoader();
