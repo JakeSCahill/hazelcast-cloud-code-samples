@@ -79,7 +79,6 @@ Update the `nonStopMapExample` in your failover client to trap the exception tha
 
 . Add the following try-catch block to the `while` loop in the `nonStopMapExample()` function.
 +
-.nonStopMapExample.java
 [source,java]
 ----
 include::tutorials:client-failover-sample-hazelcast5:example$ClientWithSsl.java[tag=catch-exceptions,indent=0]
