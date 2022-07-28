@@ -1,4 +1,4 @@
-= Configuring a Failover Client
+= Create a Failover Client
 :url-code-sample-client-failover: https://github.com/hazelcast/hazelcast-cloud-code-samples/tree/master/client-failover
 :description: In this tutorial, you'll update the code in a Java client to automatically connect to a secondary, failover cluster if it cannot connect to its original, primary cluster. You'll also run a simple test to make sure that your configuration is correct and then adjust it to include exception handling.
 :page-layout: tutorial
