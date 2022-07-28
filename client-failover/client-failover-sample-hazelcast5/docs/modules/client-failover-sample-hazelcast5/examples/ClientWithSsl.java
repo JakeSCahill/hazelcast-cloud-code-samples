@@ -1,1 +1,1 @@
-../../../../src/main/java/sample/com/hazelcast/client-failover/ClientWithSsl.java
+../../../../src/main/java/sample/com/hazelcast/clientfailover/ClientWithSsl.java
