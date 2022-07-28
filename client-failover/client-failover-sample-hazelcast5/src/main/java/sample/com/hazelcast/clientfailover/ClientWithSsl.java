@@ -1,10 +1,11 @@
-package com.hazelcast.cloud;
+package sample.com.hazelcast.clientfailover;
 
 import java.util.Properties;
 import java.util.Random;
 
-import com.hazelcast.cloud.model.City;
-import com.hazelcast.cloud.model.Country;
+import com.hazelcast.client.HazelcastClient;
+import com.hazelcast.client.config.ClientConfig;
+import com.hazelcast.client.config.ClientFailoverConfig; // <1>
 import com.hazelcast.config.SSLConfig;
 import com.hazelcast.core.HazelcastInstance;
 import com.hazelcast.core.HazelcastJsonValue;
@@ -12,9 +13,8 @@ import com.hazelcast.map.IMap;
 import com.hazelcast.sql.SqlResult;
 import com.hazelcast.sql.SqlRow;
 import com.hazelcast.sql.SqlService;
-import com.hazelcast.client.HazelcastClient;
-import com.hazelcast.client.config.ClientConfig;
-import com.hazelcast.client.config.ClientFailoverConfig; // <1>
+import sample.com.hazelcast.clientfailover.model.City;
+import sample.com.hazelcast.clientfailover.model.Country;
 
 
 // tag::intro-comments[]
@@ -46,6 +46,8 @@ public class ClientWithSsl {
         nonStopMapExample(client); // <3>
 
         client.shutdown();
+
+        System.exit(0);
 
     }
 
