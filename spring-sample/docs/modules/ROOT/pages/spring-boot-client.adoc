@@ -7,6 +7,7 @@
 :page-est-time: 10 mins
 :page-serverless: true
 :url-spring-boot: https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#getting-started
+:url-spring-hazelcast: https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#io.hazelcast
 :github-directory: https://github.com/hazelcast/hazelcast-cloud-code-samples/tree/master/spring-sample 
 
 {description}
@@ -134,3 +135,5 @@ In this tutorial, you learned how to set up a Spring Boot application to connect
 Use this boilerplate application as a foundation to start building your own application.
 
 See the xref:cloud:ROOT:overview.adoc[{hazelcast-cloud} documentation] to continue learning or try another tutorial.
+
+See the link:{url-spring-hazelcast}[Spring Boot] documentation for more about using Hazelcast with Spring.
