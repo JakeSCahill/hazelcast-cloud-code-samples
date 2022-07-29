@@ -28,7 +28,6 @@ public class MongoPersonMapStore implements MapStore<Integer, Person>, MapLoader
 
     private PersonRepository personRepository;
     
-    // interesting comment
     @Override
     public void init(HazelcastInstance hazelcastInstance, Properties properties, String mapName) {
         this.mongoClient = new MongoClient(new MongoClientURI(properties.getProperty("uri")));
