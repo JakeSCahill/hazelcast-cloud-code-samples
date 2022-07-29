@@ -14,7 +14,11 @@
 
 == Context
 
-Spring Boot helps you to create stand-alone, production-grade Spring-based applications. If you're unfamiliar with Spring or Spring Boot, see the link:{url-spring-boot}[Spring Boot documentation].
+The Spring Framework is a Java framework for creating standalone applications that run on the Java Virtual Machine (JVM).
+
+Spring Boot is a tool that makes it easier and faster to develop applications with the Spring Framework by providing  many features, including autoconfiguration.
+
+If you're unfamiliar with Spring or Spring Boot, see the link:{url-spring-boot}[Spring Boot documentation].
 
 == Before you Begin
 
@@ -23,7 +27,8 @@ You need the following:
 - A xref:cloud:ROOT:create-serverless-cluster.adoc[Serverless cluster].
 - link:https://git-scm.com/book/en/v2/Getting-Started-Installing-Git[Git]
 - link:https://maven.apache.org/install.html[Maven]
-- JDK 8 installed and set up as the `JAVA_HOME` environment variable.
+- JDK 8
+- `JAVA_HOME` environment variable set to the path of the JDK
 
 
 [[step-one]]
