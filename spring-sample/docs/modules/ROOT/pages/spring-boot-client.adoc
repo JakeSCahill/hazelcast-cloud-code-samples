@@ -76,7 +76,7 @@ The sample code for this tutorial is in the link:{github-directory}[`hazelcast-c
 .`pom.xml`
 [%collapsible]
 ====
-If the Hazelcast client is on the classpath and a suitable configuration is found, Spring Boot auto-configures a `HazelcastInstance` that you can inject into your application.
+If the Hazelcast client is on the classpath and a suitable configuration is found, Spring Boot automatically configures a `HazelcastInstance` that you can inject into your application.
 
 [source,xml,indent=0]
 ----
@@ -89,7 +89,7 @@ link:{github-directory}/pom.xml[View source]
 .`HzViridianDemoApplication.java`
 [%collapsible]
 ====
-Spring Boot first attempts to create a Hazelcast client by checking the presence of a `com.hazelcast.client.config.ClientConfig` bean. This bean is configured, using the information in the `application.properties` file.
+Spring Boot first attempts to create a Hazelcast client by checking the presence of a `com.hazelcast.client.config.ClientConfig` bean. This bean is configured using the information in the `application.properties` file.
 
 [source,java]
 ----
@@ -102,7 +102,7 @@ link:{github-directory}/src/main/java/sample/com/hazelcast/demo/viridian/HzVirid
 .`MapService.java`
 [%collapsible]
 ====
-When the `com.hazelcast.client.config.ClientConfig` bean is present, a `HazelcastInstance` is injected into the application classes. This instance is a Hazelcast client with an established connection to the Hazelcast Viridian cluster.
+When the `com.hazelcast.client.config.ClientConfig` bean is present, a `HazelcastInstance` is injected into the application classes. This instance is a Hazelcast client with an established connection to the {hazelcast-cloud} cluster.
 
 [source,java]
 ----
