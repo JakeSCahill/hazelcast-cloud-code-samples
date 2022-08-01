@@ -43,6 +43,7 @@
 	<modules>
 		<module>compute</module>
 		<module>mapstore</module>
+		<module>client-failover</module>
 	</modules>
 
 	<dependencyManagement>
