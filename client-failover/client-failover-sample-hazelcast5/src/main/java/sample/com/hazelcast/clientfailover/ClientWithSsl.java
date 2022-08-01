@@ -61,12 +61,11 @@ public class ClientWithSsl {
             classLoader.getResource("client.truststore").toURI().getPath());
         props.setProperty("javax.net.ssl.trustStorePassword", "YOUR_KEYSTORE_PASSWORD");
         ClientConfig config = new ClientConfig();
-        config.getNetworkConfig().setRedoOperation(true);
         config.getNetworkConfig().setSSLConfig(new SSLConfig().setEnabled(true).setProperties(props));
         config.getNetworkConfig().getCloudConfig()
             .setDiscoveryToken("YOUR_DISCOVERY_TOKEN")
             .setEnabled(true);
-        config.setProperty("hazelcast.client.cloud.url", "YOUR_CLIENT_URL");
+        config.setProperty("hazelcast.client.cloud.url", "YOUR_CLOUD_URL");
         config.setClusterName("YOUR_CLUSTER_ID");
         config.getConnectionStrategyConfig()
             .getConnectionRetryConfig()
@@ -84,12 +83,11 @@ public class ClientWithSsl {
             classLoader.getResource("client2.truststore").toURI().getPath()); // <7>
         props.setProperty("javax.net.ssl.trustStorePassword", "YOUR_KEYSTORE_PASSWORD");
         ClientConfig config = new ClientConfig();
-        config.getNetworkConfig().setRedoOperation(true);
         config.getNetworkConfig().setSSLConfig(new SSLConfig().setEnabled(true).setProperties(props));
         config.getNetworkConfig().getCloudConfig()
            .setDiscoveryToken("YOUR_DISCOVERY_TOKEN")
            .setEnabled(true);
-        config.setProperty("hazelcast.client.cloud.url", "YOUR_CLIENT_URL");
+        config.setProperty("hazelcast.client.cloud.url", "YOUR_CLOUD_URL");
         config.setClusterName("YOUR_CLUSTER_ID");
         config.getConnectionStrategyConfig().getConnectionRetryConfig().setClusterConnectTimeoutMillis(10000);
         return config;
@@ -114,7 +112,7 @@ public class ClientWithSsl {
                 map.put("key-" + randomKey, "value-" + randomKey);
             } catch (Exception e) {
                 // Captures exception from disconnected client
-                System.out.println("Exception (" + e.getClass().getCanonicalName() + ") " + e.getMessage());
+                e.printStackTrace();
             }
             // end::catch-exceptions[]
             map.get("key-" + random.nextInt(100_000));
