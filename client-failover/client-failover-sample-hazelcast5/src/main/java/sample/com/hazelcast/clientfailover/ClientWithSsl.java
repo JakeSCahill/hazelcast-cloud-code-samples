@@ -13,8 +13,6 @@ import com.hazelcast.map.IMap;
 import com.hazelcast.sql.SqlResult;
 import com.hazelcast.sql.SqlRow;
 import com.hazelcast.sql.SqlService;
-import sample.com.hazelcast.clientfailover.model.City;
-import sample.com.hazelcast.clientfailover.model.Country;
 
 
 // tag::intro-comments[]
