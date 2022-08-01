@@ -65,7 +65,6 @@ public class ClientWithSsl {
         config.getNetworkConfig().getCloudConfig()
             .setDiscoveryToken("YOUR_DISCOVERY_TOKEN")
             .setEnabled(true);
-        config.setProperty("hazelcast.client.cloud.url", "YOUR_CLOUD_URL");
         config.setClusterName("YOUR_CLUSTER_ID");
         config.getConnectionStrategyConfig()
             .getConnectionRetryConfig()
@@ -87,7 +86,6 @@ public class ClientWithSsl {
         config.getNetworkConfig().getCloudConfig()
            .setDiscoveryToken("YOUR_DISCOVERY_TOKEN")
            .setEnabled(true);
-        config.setProperty("hazelcast.client.cloud.url", "YOUR_CLOUD_URL");
         config.setClusterName("YOUR_CLUSTER_ID");
         config.getConnectionStrategyConfig().getConnectionRetryConfig().setClusterConnectTimeoutMillis(10000);
         return config;
