@@ -11,14 +11,15 @@ import org.springframework.stereotype.Component;
 
 import com.hazelcast.core.HazelcastInstance;
 
+// tag::class[]
 @Component
-public class SomeService {
+public class MapService {
 
-    private static final Logger logger = LoggerFactory.getLogger(SomeService.class);
+    private static final Logger logger = LoggerFactory.getLogger(MapService.class);
 
     private final HazelcastInstance hazelcastInstance;
 
-    public SomeService(HazelcastInstance hazelcastInstance) {
+    public MapService(HazelcastInstance hazelcastInstance) {
         this.hazelcastInstance = hazelcastInstance;
     }
 
@@ -33,3 +34,4 @@ public class SomeService {
     }
 
 }
+// end::class[]

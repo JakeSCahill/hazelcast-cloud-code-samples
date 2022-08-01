@@ -1,0 +1,23 @@
+= Spring Boot Application for Hazelcast Viridian
+:experimental: true
+
+This is an example of how to use Spring Boot with Hazelcast Viridian.
+
+TIP: For step-by-step instructions of how to run this app, see the link:https://docs.hazelcast.com/tutorials/spring-boot-client[tutorial].
+
+== Quickstart
+
+. Add the required properties to `spring-sample/src/main/resources/application.properties`:
+
+- `clusterName`
+- `discoveryToken`
+- `keyStorePassword`
+- `trustStorePassword` (same as `keyStorePassword`)
+
+. Add the keystore and truststore for your cluster to `spring-sample/src/main/resources`.
+
+. Execute the following to run the sample:
+
+```
+./mvnw spring-boot:run
+```

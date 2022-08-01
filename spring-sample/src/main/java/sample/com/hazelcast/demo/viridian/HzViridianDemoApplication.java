@@ -13,6 +13,7 @@ import org.springframework.core.io.Resource;
 import com.hazelcast.client.config.ClientConfig;
 import com.hazelcast.config.SSLConfig;
 
+// tag::class[]
 @SpringBootApplication
 public class HzViridianDemoApplication {
 
@@ -27,7 +28,6 @@ public class HzViridianDemoApplication {
     @Bean
     ClientConfig hazelcastClientConfig(
         @Value("${hazelcast.viridian.discoveryToken}") String discoveryToken,
-        @Value("${hazelcast.viridian.url}") String url,
         @Value("${hazelcast.viridian.clusterName}") String clusterName,
         @Value("${hazelcast.viridian.keyStore}") Resource keyStore,
         @Value("${hazelcast.viridian.keyStorePassword}") String keyStorePassword,
@@ -46,10 +46,10 @@ public class HzViridianDemoApplication {
             .getCloudConfig()
                 .setDiscoveryToken(discoveryToken)
                 .setEnabled(true);
-        config.setProperty("hazelcast.client.cloud.url", url);
         config.setClusterName(clusterName);
 
         return config;
     }
 
 }
+// end::class[]
