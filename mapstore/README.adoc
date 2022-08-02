@@ -13,10 +13,10 @@ MapStore samples can be easily built with the maven wrapper. You also need JDK 1
 - Open one of the sample project directories such as xref:mapstore-sample-hazelcast5-mongodb/README.adoc[`mapstore-sample-hazelcast5-mongodb`].
 - Execute `./mvnw clean verify` to build and run the sample.
 
-TIP: The `mapstore-sample-hazelcast5-mongodb` sample comes with a link:https://docs.hazelcast.com/tutorials/write-through-cache-serverless-mapstore[complete guide for building and running the sample in Hazelcast Serverless].
+TIP: The `mapstore-sample-hazelcast5-mongodb` sample comes with a link:https://docs.hazelcast.com/tutorials/write-through-cache-serverless-mapstore[complete guide for building and running the sample on Hazelcast Viridian Serverless].
 
 == FAQ
 
 - Why do we need to use `maven-shade-plugin`?
 
-> To make sure that your project's dependencies do not conflict with those that are built into Hazelcast Cloud. See link:https://docs.hazelcast.com/cloud/cluster-side-modules[Working with Cluster-Side Modules in Hazelcast Cloud]
+> To make sure that your project's dependencies do not conflict with those that are built into Hazelcast Viridian. See link:https://docs.hazelcast.com/cloud/cluster-side-modules[Working with Cluster-Side Modules in Hazelcast Viridian]
